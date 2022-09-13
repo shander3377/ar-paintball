@@ -13,7 +13,7 @@ AFRAME.registerComponent("shoot-bullet", {
 				var camera = document.querySelector("#camera-rig");
 				var bullet = document.createElement("a-entity");
 				var campos = camera.getAttribute("position"); //getting pos of the camera
-				var cam3d = document.querySelector("#camera-rig").object3D; //getting object of cam
+				var cam3d = document.querySelector("#camera").object3D; //getting object of cam
 				var directionObj = new THREE.Vector3(); //making a new empty direction var
 				cam3d.getWorldDirection(directionObj); //adding values of direction of cam to directionObj variable
 
